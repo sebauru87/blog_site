@@ -17,17 +17,16 @@
     <title>My Blog</title>
   </head>
   <body>
-    <h1><a href="">MY BLOG</a></h1>
-    {% for post in posts %}
+    {% if post.published_date %}
     <div>
-      <p>Published: {{post.published_date}}</p>
-      <h1><a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a></h1>
-      <p>
-        {{post.text | linebreaksbr}}
-      </p>
+      <h4>{{post.published_date}}</h4>
     </div>
-    <br>
-    {% endfor %}
+    {% endif %}
+    <div>
+      <h1>{{post.title}}</h1>
+      <p>{{post.text}}</p>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
