@@ -9,6 +9,9 @@
     font-size: 36pt;
     text-decoration: none;
 }
+.page-header p {
+    font-size: 25pt;
+}
 .content {
     margin-left: 60px;
 }
