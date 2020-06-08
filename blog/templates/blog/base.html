@@ -13,13 +13,17 @@
     <link href="https//fonts.googleapis.com/css?Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans"
         rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
     <title>My Blog</title>
 </head>
 
 <body>
     <div class="page-header">
-        <h1><a href="{% url 'post_list' %}">Python Personal Blog</a></h1>
+        
+
+          <a href="{% url 'post_new' %}"><i class="fas fa-plus fa-4x"></i></>
+            <h1><a href="{% url 'post_list' %}">Python Personal Blog</a></h1>
     </div>
     <div class="content container">
         <div class="row">
