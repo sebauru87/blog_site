@@ -10,7 +10,7 @@
     <a href="{% url 'post_detail' pk=post.pk %}">{{post.title}}</a>
   </h1>
   <p>
-    {{post.text | linebreaksbr}}
+    {{post.text | truncatechars:50 | linebreaksbr}}
   </p>
 </div>
 <br />
