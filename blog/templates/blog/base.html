@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="Description" content="Enter your description here" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet" />
-    <link href="https//fonts.googleapis.com/css?Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans"
-        rel="stylesheet" type="text/css" />
+
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">
     <title>{% block title%}{% endblock %}</title>
 </head>
@@ -25,9 +26,9 @@
         <a href="{% url 'post_new' %}" class="top-menu"><i class="fas fa-plus fa-4x"></i></a>
         <p class="top-menu">Hello: {{user.username}}<small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
         {% else %}
-            <a href="{% url 'login' %}" class="top-menu"><i class="fas fa-sign-in-alt fa-4x"></i></a>
+        <a href="{% url 'login' %}" class="top-menu"><i class="fas fa-sign-in-alt fa-4x"></i></a>
         {% endif %}
-            <h1><a href="{% url 'post_list' %}">Python Personal Blog</a></h1>
+        <h1><a href="{% url 'post_list' %}">Python Personal Blog</a></h1>
     </div>
     <div class="content container">
         <div class="row">
