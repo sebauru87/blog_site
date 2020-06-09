@@ -9,5 +9,5 @@ urlpatterns = [
     path('drafts/', views.draft_list, name='draft_list'),
     path('post/<int:pk>/publish/', views.post_publish, name='post_publish'),
     path('post/<int:pk>/comment/', views.add_comment_to_post, name='add_comment_to_post'),
-
+    path('comment/<int:pk>/remove/', views.comment_remove, name='comment_remove'),
 ]
