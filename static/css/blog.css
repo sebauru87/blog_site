@@ -1,0 +1,49 @@
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.page-header h1, .page-header h1 a {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+.page-header p {
+    font-size: 25pt;
+}
+.content {
+    margin-left: 60px;
+}
+.post {
+    margin-bottom: 60px;
+}
+.post h1 a {
+    color: black;
+}
+.date {
+    color: #828282;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif;
+    font-size: 48px;
+}
+.post-form-blog textarea {
+    width: 100%;
+}
+.post-form-blog .btn-primary {
+    float: right;
+}
+.top-menu {
+    float: right;
+    color: white;
+    margin-top: 10px;
+    padding: 5px;
+}
+.fa-user-plus {
+    margin-top: 8px;
+}
+.comment {
+    margin: 20px 0 20px 20px;
+}
